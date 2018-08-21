@@ -4,6 +4,7 @@
 #include <ctime>  // Retrieve time and able to reenter into our program in terms of mail sender triggers.
 #include <string> // We simply convert values to string, because we use string to fill out log files
 #include <sstream> // Using for converting strings
+#include <fstream>
 
 /*Using name space is not a good practice since
 we will make our own types, so we do not want any conflict
