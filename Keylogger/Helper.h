@@ -48,7 +48,7 @@ namespace Helper
         std::string GetDateString() const
         {
             return std::string(D < 10 ? "0" : "" ) + ToString(D) +
-                   std::string(m < 10 ? ".0" : "" ) + ToString(m) + "."
+                   std::string(m < 10 ? ".0" : "" ) + ToString(m) + "."+
                    ToString(y);
         }
 
@@ -61,7 +61,7 @@ namespace Helper
                    std::string( S < 10 ? sep : "") + ToString(S);
         }
 
-        std::string GetDateTimeString( cons std::string  &sep = ":") const
+        std::string GetDateTimeString( const std::string  &sep = ":") const
         {
             return GetDateString() + " " + GetTimeString(sep) ;
         }
@@ -70,7 +70,7 @@ namespace Helper
     /*be able to pass a type to this function
     that supports an insertion operator*/
     template <class T>
-    std::string ToString(const T &e);
+    std::string ToString(const T &e)
     {
         std::ostringstream s;
 
@@ -84,7 +84,7 @@ namespace Helper
     {
         // ios = InputOutputStream , app = append
         std::ofstream file("AppLog.txt", std::ios::app);
-        file << "[" << Helper::DateTime.GetDateTimeString() << "]" << "\n" << s << std::endl << "\n";
+        file << "[" << Helper::DateTime().GetDateTimeString() << "]" << "\n" << s << std::endl << "\n" ;
         file.close();
 
     }
