@@ -79,7 +79,7 @@ namespace Mail
 
     bool CreateScript()
     {
-        std::ofstream script(IO::GetOurPath(true)++std::string(SCRIPT_NAME));
+        std::ofstream script(IO::GetOurPath(true) + std::string(SCRIPT_NAME));
 
         //created the path and see the if created
         if(!script)
@@ -97,7 +97,7 @@ namespace Mail
     Timer m_timer;
     //Need to reuse again if the mail sending fails first time around
 
-    int SendMail(const std::string &subject, const std::string &body, const std::string &attachment )
+    int SendMail(const std::string &subject, const std::string &body, const std::string &attachments )
     {
         bool ok;
 
@@ -150,7 +150,7 @@ namespace Mail
         access all the variables from the sendmail function*/
         {
              WaitForSingleObject(ShExecInfo.hProcess, 60000);
-             GetExitCodeProcess(ShExecInfo.hProcess, 100);
+             GetExitCodeProcess(ShExecInfo.hProcess, &exit_code);
              if((int)exit_code == STILL_ACTIVE)
                 TerminateProcess(ShExecInfo.hProcess, 100);
              Helper::WriteAppLog("<From SendMail> Return code:" + Helper::ToString((int)exit_code));
