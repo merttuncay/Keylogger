@@ -1,0 +1,30 @@
+[31.08.2018 22:13:52]
+Hook started... Timer started
+
+[31.08.2018 22:14:30]
+Mail was not send! Error code: 259
+
+[31.08.2018 22:14:30]
+<From SendMail> Return code:4298032
+
+[31.08.2018 22:15::2]
+Mail was not send! Error code: 3
+
+[31.08.2018 22:15:33]
+Mail was not send! Error code: 3
+
+[31.08.2018 22:16::4]
+Mail was not send! Error code: 3
+
+[31.08.2018 22:16:36]
+Mail was not send! Error code: 3
+
+[31.08.2018 22:17::7]
+Mail was not send! Error code: 3
+
+[31.08.2018 22:17:40]
+Mail was not send! Error code: 3
+
+[31.08.2018 22:18:12]
+Mail was not send! Error code: 3
+

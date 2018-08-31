@@ -1,0 +1,6 @@
+[31.08.2018 22:52:49]
+Hook started... Timer started
+
+[31.08.2018 22:53:21]
+<From SendMail> Return code:7
+
