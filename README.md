@@ -1,2 +1,2 @@
 # Keylogger
-I am working on a KeyLogger Project which I started from a Udemy Course related to it.
+After taking a Udemy course, I completed a KeyLogger project.
